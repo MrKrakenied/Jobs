@@ -56,7 +56,6 @@ public class CMIScoreboardManager {
 					AnimatedScoreboardAPI api = AnimatedScoreboard.loadAPI(Jobs.getInstance());
 					if (api != null) {
 						if (timerMap.get(player.getUniqueId()).isAsbPresent()) {
-							Optional<PlayerScoreboard> ps = api.getPlayerScoreboard(player.getUniqueId());
 							PlayerScoreboard playerScoreboard = api.getPlayerScoreboard(player.getUniqueId()).get();
 							playerScoreboard.getScoreboardPlayer().enableScoreboard();
 						}
